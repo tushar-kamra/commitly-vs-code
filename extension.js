@@ -3,8 +3,8 @@ const cp = require("child_process");
 const axios = require("axios");
 
 const AI_API_URI = process.env.AI_API_URI;
-const AI_MODEL_NAME = "";
-const AI_API_KEY = "";
+const AI_MODEL_NAME = process.env.AI_MODEL_NAME;
+const AI_API_KEY = process.env.AI_API_KEY;
 
 function activate(context) {
     let disposable = vscode.commands.registerCommand(
