@@ -1,0 +1,44 @@
+{
+    "name": "commitly",
+    "displayName": "Commitly",
+    "description": "Commitly is a VS Code extension that uses AI to automatically generate clear and concise commit messages based on your staged changes. With just one click, it analyzes the differences in your code and creates an informative commit title and description, helping you save time and maintain consistent commit message standards. Perfect for developers who want to streamline their workflow and improve version control practices!",
+    "author": {
+        "name": "Tushar Kamra",
+        "email": "tushar.kamra@internshala.com"
+    },
+    "publisher": "Tushar Kamra",
+    "icon": "images/icon.png",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.95.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [],
+    "main": "./extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "commitly.generateCommitMessage",
+                "title": "Commitly"
+            }
+        ]
+    },
+    "scripts": {
+        "lint": "eslint .",
+        "pretest": "npm run lint",
+        "test": "vscode-test"
+    },
+    "devDependencies": {
+        "@types/mocha": "^10.0.9",
+        "@types/node": "20.x",
+        "@types/vscode": "^1.95.0",
+        "@vscode/test-cli": "^0.0.10",
+        "@vscode/test-electron": "^2.4.1",
+        "eslint": "^9.13.0"
+    },
+    "dependencies": {
+        "axios": "^1.7.8"
+    }
+}
